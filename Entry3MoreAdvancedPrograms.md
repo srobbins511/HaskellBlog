@@ -75,4 +75,22 @@ This function is functionally identical to less, but using the data type PN whic
 
 ### Summary
 
-The code above defines three functions all defining the functionality needed two multiply two inputs of their respetive data types (*NN, PN, Frac*) 
+The code above defines three functions all defining the functionality needed two multiply two inputs of their respetive data types (*NN, PN, Frac*).
+
+The **mult** function for *NN* comes to its solution be recursing on the first input given. It checks to see if that input has a successor and if it does it removes the successor and recurses on the new input and the original second input while adding another of that input.
+    It in essence says:
+
+    `n * m = (n-1) * m + m`
+
+The **multP** function does almost the exact same thing as the **mult** function, but it has to be written slightly differently syntax wise as positive numbers do not include zero and so there is no need for that check.
+
+The real function though and the one i will be breaking down is the fraction multiplier. This function is defined as one that when given two inputs of type *Frac* will return an output of type *Frac*. This function returns the two inputs multiplied together.
+    -*Frac* is a data type made up of an *NN* number as a numerator, and a *PN* number as a denominator.
+
+### Breakdown
+
+1. `multF :: Frac -> Frac -> Frac`
+    The definition of the fraction as one that takes two *Frac* inputs and returns a *Frac* output
+
+2. `multF (n,p) (m,t) = (mult n m,multP p t)`
+    This line seperates the two *Frac* inputs into their requesite parts and uses the **mult** functions present for each data type to multiply them together. Its result is a *Frac* made up of the **mult** of the two *NN* numbers, and a **multP** of the two *PN* numbers
