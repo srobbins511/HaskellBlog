@@ -7,3 +7,5 @@
 3. [Entry 3: More advanced Programs](/Entry3MoreAdvancedPrograms.md)
 
 4. [Entry 4: Conditionals](/Entry4Conditionals.md)
+
+5. [Entry 5: Advanced Conditionals](/Entry5AdvancedConditionals.md)
