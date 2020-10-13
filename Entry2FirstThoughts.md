@@ -33,3 +33,5 @@ add (S n) m = S (add n m)
     This line defines the recursive part of the function. The inputs on the left are `(S n)` and `m`. The `(S n)` input defines a variable natural number that contains a successor. And `m` defines any natural number. So this case of the function is called when given two inputs with the first being a non-zero natural number and the second being any natural number. The right side of the equation is the recursive call for the function.
 
     In essence it is saying when given a natural number variable with a successor and any other natural number variable, the result is the successor of the addition of the two variables, which will call itself again and again until the base case of adding something to zero is reached.
+
+It was the simplicity of the function as well as its similarity to content i learned in Discrete Math that really allowed me to get a grasp of how Haskell worked as a language and the versitility of it as a language.
