@@ -15,11 +15,11 @@
     }
     ```
 
-#### Summary
+### Summary
 
     This fucntion evaluates if the first given number of type NN is less than the second given number of type NN and returns a boolean value as a result. It evaluates true if and only if the first given value is less than the second given value. The algorithm works by removing the successors of each NN number in unison and then recursing on the new numbers. It does this until one or both the numbers reaches zero. Whichever number reches zero first had to have been the number witht he least value and thus was less than the other. It returns true if this was the first value given and false if it wasn't or if both numbers hit zero at the same time and were thus equal.
 
-#### Breakdown
+### Breakdown
 
 1. `less :: NN -> NN -> Bool`
 
@@ -53,7 +53,7 @@
     }
     ```
 
-#### Summary3
+### Summary3
 
     This function is functionally identical to less, but using the data type PN which behaves like a positive number. It works the same by recursively removing successors of the two inputs until a base case is reached
 
@@ -75,6 +75,6 @@
     }
     ```
 
-#### Summary 2
+### Summary 2
 
     The code above defines three functions all defining the functionality needed two multiply two inputs of their respetive data types (*NN, PN, Frac*) 
